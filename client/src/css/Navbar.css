@@ -1,0 +1,60 @@
+/* Navbar Styles */
+nav {
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  color: rgb(13, 5, 5);
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 5px 0px;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 5px;
+}
+
+a:hover {
+  color: #f8f9fa;
+  background-color: #495057;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  a {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+
+  a {
+    font-size: 0.9em;
+  }
+}
